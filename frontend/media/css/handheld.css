@@ -1,0 +1,268 @@
+/* hide this stuff */
+
+.site_links, .site_links_wrapper, div.donate, div.signup, div.home-header {
+    display:none;
+}
+
+/* change this stuff */
+div.header {
+    display:block;
+    background:#2b3d5c;
+    width:100%;
+    text-align:center;
+    height:120px;
+}
+
+div.logo {
+    width:276px;
+    float:none;
+    margin:0 auto;
+    height:120px;
+}
+
+div.home-wrapper {
+    float:none;
+    clear:left;
+    height:130px;
+}
+
+.cycle-slideshow {
+    float:none;
+    width:100%;
+    border:none;
+    height:256px;
+    background:#2b3d5c;
+}
+
+.cycle-slideshow div {
+    height:auto;
+    width:100%;
+}
+
+/*.cycle-slideshow div.slide1 {background:url(/media/uploads/slide1bg.jpg) no-repeat top center;width:100%;float:none;height:256px;overflow:hidden;}
+.cycle-slideshow div.slide2 {background:url(/media/uploads/slide2bg.jpg) no-repeat top center;width:100%;float:none;height:256px;overflow:hidden;}*/
+div.slide, div#custom-pager-wrapper {
+    width:100%;
+    margin:0 auto;
+}
+
+div.slide a img {
+    width:100%;
+}
+
+div.slide a {
+    float:none;
+    margin-top:10px;
+    z-index:600;
+}
+
+div#custom-pager {
+    position:relative;
+    top:-15px;
+    font-size:60px;
+    color:#19273e;
+    z-index:500;
+    width:300px;
+    float:none;
+    text-align:center;
+    height:25px;
+}
+
+img.right, img.left {
+    float:none;
+    margin:10px auto;
+    max-width:100%;
+    display:block;
+}
+
+div.fb-like-mobile{
+    display:block;
+}
+
+a#prev {
+    float:left;
+    margin:0px;
+}
+
+a#next {
+    margin:0;
+}
+
+h1 {
+    font-size:24px;
+}
+
+.petition-text {
+    float:none;
+    width:100%;
+    padding:5px 0%;
+}
+
+.petition-form{
+    float:right;
+    width:90%;
+    padding:5px 5%;
+    margin:0;
+}
+
+.centered {
+    float:none;
+    display:block;
+    width:100%;
+    padding:0;
+    border:none;
+}
+
+.wrapper {
+	width:100%;
+    margin:0;
+}
+
+.header { 
+    width:100%;
+    height:auto;
+    padding:10px 0px;
+}
+
+div.sidebar, div.main_content, div.full_content {
+    width:90%;
+    padding:5px 5%;
+    margin:0;
+}
+
+div.megafooter-nav.centered {
+    width:90%;
+    padding:5px 5%;
+}
+
+.copy {
+    display:block;
+    width:90%;
+    padding:20px 5%;
+    text-align:left;
+}
+
+.powered {
+    display:block;
+    width:90%;
+    padding:20px 5%;
+    text-align:left;
+}
+
+.disclaimer {
+    border:1px solid white;
+    padding:10px 2%;
+    margin:0px 2%;
+    display:block;
+    text-align:center;
+    width:90%;
+    float:left;
+}
+
+.connect {
+    width:92%;
+    float:none;
+    padding:5px 2% 15px;
+    clear:left;
+}
+
+.connect td {
+    float:left;
+    width:100%;
+    padding:5px 0px 15px;
+}
+
+.home-content-wrapper div.latest {
+    width:92%;
+    padding:5px 2%;
+    clear:left;
+}
+
+.home-content-wrapper {
+    padding:0;
+}
+
+td.heading {
+    text-align:left;
+    width:100%;
+    padding:0px;
+}
+
+.megafooter-wrapper {
+    clear:left;
+    width:100%;
+    border-top:2px solid #19273e;
+    background:url(../images/megafooterbg3.jpg) 52% 88% no-repeat;
+    height:550px;
+}
+
+.mobile {
+    display:block;
+}
+
+.mobile-mini-nav {
+    font-size:11px;
+    text-align:center;
+    display:block;
+    padding:10px 0px;
+    background-color:#dedede;
+    width:100%;
+}
+
+.mobile-mini-nav a {
+    margin:10px 15px;
+    text-transform:uppercase;
+}
+
+.mobile-site-links {
+    background-color:#f7f3ed;
+    display:block;
+    padding:0;
+}
+
+.mobile-site-links ul {
+    list-style:none;
+    margin: 0;
+    padding:0;
+    height:auto;
+    width:100%;
+}
+
+.mobile-site-links ul li { 
+    float:none;
+    display:block; 
+    margin: 2px 0px;
+    font-size: 14px;
+    width:92%;
+    text-transform: lowercase;
+    padding:5px 4%;
+    color:black;
+    border:1px solid #dedede;
+}
+
+.mobile-site-links ul li a {
+    color:black;
+}
+
+div.left, div.right {
+    float:none;
+    margin:0px;
+    display:block;
+    width:300px;
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+    /* Portrait styles */
+ 
+
+
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+    /* Landscape styles */
+  
+
+}
+

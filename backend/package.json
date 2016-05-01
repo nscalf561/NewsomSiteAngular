@@ -19,7 +19,9 @@
   "homepage": "https://github.com/nscalf561/newsomSite#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
     "express": "^4.13.4",
-    "hbs": "^4.0.0"
+    "hbs": "^4.0.0",
+    "morgan": "^1.7.0"
   }
 }
