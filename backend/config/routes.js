@@ -1,9 +1,14 @@
-var express 		= require('express'),
-		router			= express.Router(),
-		path 				= require('path'),
-		app 				= express(),
-		bodyParser  = require('body-parser'),
-		hbs					= require('hbs');
+var express 				= require('express'),
+		router					= express.Router(),
+		path 						= require('path'),
+		app 						= express(),
+		bodyParser  		= require('body-parser'),
+		hbs							= require('hbs'),
+		viewController	= require('../controllers/viewController');
+
+// router.route('*')
+// 	.get(viewController.test);
+
 
 // Home route/landing page
 router.route('/')
@@ -75,4 +80,5 @@ router.route('/getInvolved/register')
 router.route('/privacy-policy')
 	.get(viewController.privacyPolicy);
 
-	
+
+module.exports = router;

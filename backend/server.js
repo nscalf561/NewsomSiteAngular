@@ -1,6 +1,10 @@
 var express 		= require('express'),
 		app 				= express(),
-		bodyParser 	= require('body-parser');
+		bodyParser 	= require('body-parser'),
+		cors 				= require('cors'),
+		routes 			= require('./config/routes'),
+		hbs 				= require('hbs'),
+		morgan 			= require('morgan');
 
 // Allows for cross origin resource sharing, this needs to be changed
 // for deployment --- settings are not secure right now
@@ -12,7 +16,7 @@ app.use(bodyParser.json());
 
 //TODO DO WE NEED THIS?
 // Serves static files from public folder
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/views'));
 
 // Sets view engine to hbs
 app.set('view engine', 'hbs');
