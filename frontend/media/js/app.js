@@ -31,24 +31,14 @@ App.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
 				templateUrl: './templates/contact.html'
 			})
 
-			.state('donate', {
-				url: 'donate',
-				templateUrl: './templates/donate.html'
-			})
-
 			.state('endorse', {
 				url: 'endorse',
 				templateUrl: './templates/endorse.html'
 			})
 
-			.state('facebook', {
-				url: 'facebook',
-				templateUrl: './templates/facebook.html'
-			})
-
 			.state('get-involved', {
 				url: 'get-involved',
-				templateUrl: './templates/get-involved.html'
+				templateUrl: './templates/getInvolved.html'
 			})
 
 			.state('issues', {
