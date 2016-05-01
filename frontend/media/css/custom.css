@@ -1,6 +1,7 @@
 Body { 
 	background-color:#fff;
-	margin:0;padding:0;
+	margin:0;
+	padding:0;
 }
 
 .mobile, .fb-like-mobile {
@@ -25,6 +26,7 @@ a:hover {
 	clear:left;
 	background-color:#fff;
 }
+
 .interior-header {
 	background:#2b3d5c;
 	width:100%;
@@ -41,13 +43,12 @@ img.left {
 }
 
 .header { 
-	width:960px;
+	width:100%;
 	margin:0px auto;
 	height:120px;
 	padding:10px 0px;
-	float: left;
-	/*text-align: left; */
-	/*display: inline-block;*/
+	/*text-align: center;*/
+	display: inline-block;
 }
 
 .print_header {
@@ -479,8 +480,9 @@ div.site_links {
 }
 
 .site_links ul li ul li a {
-	color:white;font-size:11px;padding:
-	5px 10px;
+	color:white;
+	font-size:11px;
+	padding:5px 10px;
 }
 
 .site_links ul li ul li a:hover, .site_links ul li ul li a:visited:hover {
@@ -489,8 +491,8 @@ div.site_links {
 }
 
 .centered {
-	width:960px;margin:
-	0 auto;
+	width:960px;
+	margin:0 auto;
 }
 
 .cycle-slideshow {

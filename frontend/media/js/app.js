@@ -6,7 +6,7 @@ var App = angular.module('starter', [
 App.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
 		// if none of the above states are matched, use this as the fallback
-		$urlRouterProvider.otherwise('/app');
+		// $urlRouterProvider.otherwise('/app');
 
 		$stateProvider
 
@@ -17,12 +17,12 @@ App.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
 			})
 
 			.state('aboutGavin', {
-				url: 'about-gavin',
+				url: 'about-Gavin',
 				templateUrl: './templates/about/aboutGavin.html',
 			})
 
 			.state('aboutJennifer', {
-				url:'aboutJennifer',
+				url:'about-Jennifer',
 				templateUrl: './templates/about/aboutJennifer.html'
 			})
 
@@ -43,33 +43,33 @@ App.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
 
 			.state('facebook', {
 				url: 'facebook',
-				templateUrl: './templates/facebook'
+				templateUrl: './templates/facebook.html'
 			})
 
 			.state('get-involved', {
 				url: 'get-involved',
-				templateUrl: './templates/get-involved'
+				templateUrl: './templates/get-involved.html'
 			})
 
 			.state('issues', {
 				url: 'issues',
-				templateUrl: './templates/issues'
+				templateUrl: './templates/issues.html'
 			})
 
 			.state('latest-news', {
 				url: 'latest-news',
-				templateUrl: './templates/latest-news'
+				templateUrl: './templates/latestNews.html'
 			})
 
 			.state('volunteer', {
 				url: 'volunteer',
-				templateUrl: './templates/volunteer'
+				templateUrl: './templates/volunteer.html'
 			});
 
-		// $locationProvider.html5Mode({
-		// 	enabled: true,
-		// 	requiredBase: false
-		// });
+		$locationProvider.html5Mode({
+			enabled: true,
+			requiredBase: false
+		});
 
 
 	}]);
