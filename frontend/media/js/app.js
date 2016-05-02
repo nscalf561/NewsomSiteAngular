@@ -44,15 +44,67 @@ App.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 				templateUrl: './templates/issues.html'
 			})
 
+			.state('economy', {
+				url: '/issues/economy',
+				templateUrl: './templates/issues/economy.html'
+			})
+
+			.state('energy', {
+				url: '/issues/energy',
+				templateUrl: './templates/issues/energy.html'
+			})
+
+			.state('civilRights', {
+				url: '/issues/civil-rights', 
+				templateUrl: './templates/issues/civilRights.html'
+			})
+
+			.state('schools', {
+				url: '/issues/schools',
+				templateUrl: './templates/issues/schools.html'
+			})
+
+			.state('drugPolicy', {
+				url: '/issues/drug-policy', 
+				templateUrl: './templates/issues/drugPolicy.html'
+			})
+
+			.state('government', {
+				url: '/issues/government', 
+				templateUrl: './templates/issues/government.html'
+			})
+
 			.state('latest-news', {
 				url: '/latest-news',
 				templateUrl: './templates/latestNews.html'
+			})
+
+			.state('be-a-man', {
+				url: '/latest-news/be-a-man',
+				templateUrl: './templates/be-a-man.html'
+			})
+
+			.state('join-us', {
+				url: '/join-us', 
+				templateUrl: './templates/joinUs.html'
+			})
+
+			.state('press-releases', {
+				url: '/press-releases', 
+				templateUrl: './templates/pressReleases.html'
+			})
+
+			.state('register', {
+				url: '/register',
+				templateUrl: './templates/register.html'
 			})
 
 			.state('volunteer', {
 				url: '/volunteer',
 				templateUrl: './templates/volunteer.html'
 			});
+
+
 
 		// $locationProvider.html5Mode({
 		// 	enabled: true,

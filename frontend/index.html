@@ -2,10 +2,6 @@
      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-<!-- Mirrored from gavinnewsom.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 31 Oct 2015 20:14:19 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<!-- /Added by HTTrack -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="en-us" />
@@ -56,17 +52,6 @@
   <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
 
-<!-- 
-  <script type="text/javascript" src="./media/js/udm/udm-custom.js"></script>
-  <script type="text/javascript" src="./media/js/udm/udm-control.js"></script>
-  <script type="text/javascript" src="./media/js/udm/udm-style.js"></script>
-  <script type="text/javascript" src="./media/js/udm/udm-dom.js" defer="defer"></script>
-  <script type="text/javascript" src="./media/js/udm/udm-mod-keyboard.js" defer="defer"></script>
-  <script type="text/javascript">var switchTo5x=true;</script> -->
-  <!-- <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js" defer="defer"></script> -->
-  <!-- <script type="text/javascript">stLight.options({publisher: "954eb6cc-e0c3-4406-9356-78cf33d429f6", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script> -->
-
-
   <!-- Angular Scripts -->
   <script src="media/js/app.js"></script>
   <script src="controllers/indexController.js"></script>
@@ -81,10 +66,13 @@
   <meta name="msapplication-TileColor" content="#2c3d5b">
   <meta name="msapplication-TileImage" content="./media/images/favicon-144.png">
 
+  <!-- includes the font "Lato" from google fonts -->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+
+  <!-- Javascript for actblue donations -->
   <script type="text/javascript"> 
     function genURL() {
       var user = document.getElementById("user").value;
@@ -92,13 +80,32 @@
     }
   </script>
 
+  <!-- Javascript for facebook button -->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1544565635837625";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Javascript for twitter button -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "b3f241c8-b10f-4386-8784-13f8c5a545d0", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
   <base href="/" >
 </head>
 
 <body ng-app="starter">
-  <header ng-include=" 'templates/header.html' "></header>
-  <div ui-view></div>
-  <footer ng-include=" 'templates/footer.html' "></footer>
+  <div id="fb-root"></div>
+
+    <header ng-include=" 'templates/header.html' "></header>
+    <div ui-view></div>
+    <footer ng-include=" 'templates/footer.html' "></footer>
+
 </body>
 
 </html>
