@@ -45,8 +45,9 @@ img.left {
 .header { 
 	width:100%;
 	margin:0px auto;
-	height:140px;
+	height:120px;
 	padding:0px;
+	/*position: fixed;*/
 	/*text-align: center;*/
 	display: inline-block;
 }
@@ -444,7 +445,8 @@ div.site_links {
 	margin-right: 10%;
   padding-top:60px;
   display: inline;
-	/*margin: 0 auto;*/
+  position: absolute;
+  z-index: 1000;	
  }
 
 .site_links ul {
